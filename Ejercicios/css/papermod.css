@@ -1,0 +1,65 @@
+.contenedor{
+     width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    color: rgb(110, 110, 110);
+    font-size: 20px;
+
+}
+body{
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+}
+h3{color: black;}
+
+.logo b{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+.logo a{ 
+    text-decoration: none;
+}
+
+section i{
+    color: black;
+    font-size: 30px;
+}
+section a{
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav{
+    text-align: right;
+}
+nav a{
+     text-decoration: none;
+     color:black
+}
+.etiqueta{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+footer{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+footer a{
+
+    color: rgb(110, 110, 110);
+    
+}
