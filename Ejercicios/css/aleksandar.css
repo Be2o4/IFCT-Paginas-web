@@ -1,0 +1,101 @@
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 13px;
+    font-size: 25px;
+    margin-top: 50px;
+    background-color: #f8f6f2;
+    justify-content: baseline;
+    color: rgb(43, 42, 42);
+    
+    
+}
+header{
+
+    border-bottom: 1px solid rgb(214, 214, 214);
+    
+}
+header h1{
+    color: black;
+
+}
+
+h1{
+    color: black;
+
+}
+h2{
+    font-size: 35px;
+    margin-top: 70px;
+    color: black;
+}
+.contenedor{
+    width: 960px;
+    height: 400px;
+    margin: 0 auto;
+}
+.redonda{
+    width: 150px;
+    border-radius: 75px ;
+    height: 150px;
+}
+.contenedor b{
+    font-size: 85px;
+    font-weight: 600;
+}
+.product{
+    color: rgb(151, 151, 153);
+}
+
+.nota {
+    background-color: #f0eeea;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    font-style: italic;
+    color: rgb(73, 73, 73);
+
+}
+.nota p{
+     background-color: #f0eeea;
+     font-size: 17px;
+     font-style: normal;
+     border-radius: 5px;
+}
+.pill{
+    background-color: #f0eeea;
+    margin-right: 14px;
+       padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+
+}
+hr{
+    border: none;
+    border-top: 1px solid;
+    margin: 0%;
+    color: rgb(207, 207, 207);
+}
+.lista{
+    
+}
+footer hr{
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+footer a{
+     margin-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.final a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
