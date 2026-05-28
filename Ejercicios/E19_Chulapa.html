@@ -13,46 +13,105 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
 
+        }
+        main{
+            background-color: rgb(0, 0, 71);
+            
         }
 
         .contenedor {
+            width: 70vw;
             color: white;
+            margin: 0 auto;
             text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 1px solid rgba(255, 255, 255, 0);
 
+        }
+        
+        .separador{
+            width: 19%;
+            margin: 15px auto;
+            text-align: center;
+            margin-bottom: 3%;
         }
 
         header {
             height: 100vh;
             width: 100vw;
-            background-image: url("https://images.unsplash.com/photo-1545290614-5ceedf604139?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=60");
+            background-image: url("https://images.unsplash.com/photo-1545290614-5ceedf604139");
             background-position: center;
             background-size: cover;
             overflow: hidden;
         }
+        header p{
+            font-size: 1.5rem;
+            text-shadow: 3px 3px 2px black;
+            margin-bottom: 15%
+        }
+
+        header a{
+            
+            border: 1px solid white;
+             border-radius: 5px;
+             text-decoration: none;
+             padding-bottom: 1%;
+             color: white;
+             padding-left: 1%;
+             padding-right: 1%;
+             padding-top: 1%;
+            
+        }
 
         .fondo {
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.575);
+            background-color: rgba(0, 0, 0, 0.466);
             padding-top: 40vh;
+            text-align: center;
 
         }
+      
 
         h1 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: white;
-            text-align: center;
-            text-decoration: underline;
-
-
+            text-shadow: 3px 3px 2px black;
+           
         }
-
-        .contenedor {
-            width: 80vw;
-            margin: 0 auto;
+        .pill{
             
+            background-color: rgb(19, 100, 194);
+            border-radius: 0.3rem;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            padding-left: 0.5rem;
+             color: white;
+             width: fit-content;
+             margin: 0 auto;
+             margin-top: 2rem;
+
         }
+        .caja{
+            margin-right: 0.5rem;
+        }
+        .pill a{
+            text-decoration: none;
+            background-color: rgb(0, 0, 71);
+            color:  rgb(19, 100, 194);
+            padding: 0.5rem;
+            border: 1px solid rgb(68, 137, 226);
+            border-radius: 0.2rem;
+        }
+        .pill a:hover{
+            color: aliceblue;
+            background-color: rgb(68, 137, 226);
+        }
+
+       
     </style>
 </head>
 
@@ -61,15 +120,22 @@
 
         <div class="fondo">
             <div class="contenedor">
-            <h1>CHULAPA</h1>
-            <p>A full flexible Jekyll theme for Github Pages</p>
-            <a href=""><i class="fa-brands fa-github"></i> Follow</a>
-            <p></p>
-        </div>
+                <h1>CHULAPA</h1>
+                <hr class="separador">
+                <p>A full flexible Jekyll theme for Github Pages</p>
+                <a href=""><i class="fa-brands fa-github"></i> Follow</a>
+                
+            </div>
         </div>
     </header>
     <main>
-
+        
+       <div class="contenedor"> 
+        <p class="pill">
+        <span class="caja">Latest release</span><a href="">v2.0.1</a>
+       </p>
+        <p><a href="">Read the docs</a></p>
+</div> 
     </main>
 </body>
 
