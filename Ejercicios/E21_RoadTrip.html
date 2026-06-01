@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0 auto;
+        }
+
+        html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .lobster-regular {
+            text-align: center;
+            font-size: 7.5rem;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.788);
+
+            position: absolute;
+            width: 70%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .fondo {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.37);
+        }
+
+        .portada {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../Imagenes/banner.jpg);
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            background-attachment: fixed;
+        }
+
+        .negrita {
+            font-weight: bold;
+        }
+
+        .fijo {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 1000;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        .flecha {
+            position: absolute;
+            color: white;
+            bottom: 2rem;
+            left: 48%;
+            font-size: 1.5rem;
+            background-color: rgba(196, 196, 196, 0.247);
+            padding: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0);
+            border-radius: 2rem;
+        }
+
+        .flecha:hover {
+            background-color: rgba(116, 113, 113, 0.171);
+            text-decoration: none;
+        }
+
+        .flecha i {
+
+            color: white;
+
+        }
+
+        .flecha:hover i {
+            color: rgba(221, 221, 221, 0.486);
+        }
+
+        .pagina {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+
+        }
+
+        .img_p2 {
+            background-image: url(../Imagenes/banner2.jpg);
+        }
+         .img_p3 {
+            background-image: url(../Imagenes/banner5.jpg);
+        }
+         .img_p4 {
+            background-image: url(../Imagenes/banner4.jpg);
+        }
+        .img_p5{
+            background-image: url(../Imagenes/banner3.jpg);
+        }
+        .img_p6{
+            background-color: #f64747;
+        }
+        
+        
+
+
+        .recuadro {
+            width: 70vw;
+            min-height: 50vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.685);
+            color: rgba(255, 255, 255, 0.507);
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 2rem;
+            box-sizing: border-box;
+
+
+        }
+
+        .recuadro h2 {
+
+            font-size: 2rem;
+            color: white;
+            margin-top: 2rem;
+
+        }
+
+        .text {
+            line-height: 1.3;
+            margin-bottom: 2.4rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+
+        }
+
+        .fecha {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+
+        }
+
+        .boton {
+            margin: 0 auto;
+            width: fit-content;
+            border: 2px solid rgba(255, 255, 255, 0.507);
+            padding: 0.6rem 0.8rem;
+            border-radius: 0.3rem;
+
+        }
+
+        .boton a {
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            text-decoration: none;
+
+        }
+        footer{
+            background-color: rgb(29, 29, 26);
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.507);
+            font-size: 0.9rem;
+        }
+        footer a{
+            text-decoration: none;
+            color: #f64747;
+        }
+    </style>
+
+    <title>Road Trip</title>
+
+<body>
+    <header class="fijo">
+        <p><span class="negrita"> Road Trip </span>by TEMPLATED</p>
+    </header>
+    <section class="portada">
+        <div class="fondo">
+            <h1 class="lobster-regular"><b>This is Road Trip</b> </h1>
+            <p class="flecha">
+                <a href="#pag2"><i class="fa-solid fa-angle-down"></i></a>
+            </p>
+        </div>
+    </section>
+    <section id="pag2" class="pagina img_p2">
+        <div class="fondo">
+            <div class="recuadro">
+                <h2>NIBH NON LOBORTIS MUS NIBH</h2>
+                <p class="fecha">01.01.2017</p>
+                <p class="text">Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur
+                    purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed
+                    vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient
+                    nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in
+                    tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+                <p class="boton"><a href="">Learn More</a></p>
+               
+                </p>
+            </div> <p class="flecha">
+                    <a href="#pag3"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+        </div>
+
+    </section>
+     <section id="pag3" class="pagina img_p3">
+        <div class="fondo">
+            <div class="recuadro">
+                <h2>MUS ELIT A ULTRICES AT</h2>
+                <p class="fecha">12.21.2016</p>
+                <p class="text">Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+                <p class="boton"><a href="">Learn More</a></p>
+               
+            </div>
+        </div> <p class="flecha">
+                    <a href="#pag4"><i class="fa-solid fa-angle-down"></i></a>
+                </p>
+        </div>
+
+    </section>
+    <section id="pag4" class="pagina img_p4">
+        <div class="fondo">
+            <div class="recuadro">
+                <h2>Varius a cursus aliquet</h2>
+                <p class="fecha">11.11.2016</p>
+                <p class="text">Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+                <p class="boton"><a href="">Learn More</a></p>
+               
+            </div>
+        </div> <p class="flecha">
+                    <a href="#pag5"><i class="fa-solid fa-angle-down"></i></a>
+                </p>
+        </div>
+
+    </section>
+      <section id="pag5" class="pagina img_p5">
+        <div class="fondo">
+            <div class="recuadro">
+                <h2>Luctus blandit mi lectus in nascetur</h2>
+                <p class="fecha">10.30.2016</p>
+                <p class="text">Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse. </p>
+                <p class="boton"><a href="">Learn More</a></p>
+               
+            </div>
+        </div> <p class="flecha">
+                    <a href="#pag6"><i class="fa-solid fa-angle-down"></i></a>
+                </p>
+        </div>
+
+    </section>
+     <section id="pag6" class="pagina img_p6">
+        <
+           <h2>Contact Me</h2>
+      
+    </section>
+    <footer>
+        <p>Site made with: <span class="link" ><a href="">Templated</a></span> Distributed by <span class="link"><a href="">ThemeWagon</a></span></p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
