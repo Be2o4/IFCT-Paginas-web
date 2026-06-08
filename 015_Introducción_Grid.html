@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Grid Css</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-columns: 200px repeat(3,1fr);
+            gap: 10px;
+
+        }
+        .contenedor div{
+            border: 1px solid blue;
+            height: 200px;
+        }
+        /*areas*/
+        .areas{
+            display: grid;
+            grid-template-areas: 
+            "cabecera cabecera cabecera" 
+            "lateral cuerpo cuerpo" 
+            "pie pie pie";
+        }
+        .inicio{
+            grid-area: cabecera;
+            height: 100px;
+            background-color: rgb(0, 92, 35);
+        }
+        .colum1{
+            grid-area: lateral;
+            height: 500px;
+            background-color: rgb(27, 133, 0);
+        }
+        .colum2{
+            grid-area: cuerpo;
+             height: 500px;
+            background-color: rgb(151, 235, 151);
+        }
+        .final{
+            grid-area: pie;
+            height: 100px;
+            background-color: rgb(37, 185, 99);
+        }
+
+
+    </style>
+</head>
+<body> 
+    <div class="areas">
+        <div class="inicio">cabecera</div>
+        <div class="colum1">lateral</div>
+        <div class="colum2">cuerpo</div>
+        <div class="final">pie</div>
+
+    </div>
+    <div class="contenedor">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+   
+</body>
+</html>
