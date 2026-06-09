@@ -20,8 +20,9 @@
             display: grid;
             grid-template-areas: 
             "cabecera cabecera cabecera" 
-            "lateral cuerpo cuerpo" 
+            "lateral cuerpo derecha" 
             "pie pie pie";
+            grid-template-columns: 1fr 7fr 1fr;
         }
         .inicio{
             grid-area: cabecera;
@@ -38,6 +39,9 @@
              height: 500px;
             background-color: rgb(151, 235, 151);
         }
+        .colum3{
+            background-color: rgb(22, 235, 22);
+        }
         .final{
             grid-area: pie;
             height: 100px;
@@ -51,6 +55,7 @@
     <div class="areas">
         <div class="inicio">cabecera</div>
         <div class="colum1">lateral</div>
+         <div class="colum3">derecha</div>
         <div class="colum2">cuerpo</div>
         <div class="final">pie</div>
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: darkseagreen;
+            gap: 1rem;
+            padding: 1rem;
+            margin: 0 auto;
+            max-width: 960px;
+            
+            /*align-items: center;*/
+        }
+        .contenedor div{
+            border: 1px solid blue;
+            background-color: azure;
+            border-radius: 3px;
+            
+            
+        }
+        .contenedor .elem1{
+           /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;*/
+            grid-area: 1/1/4/3;
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+    <div class="contenedor">
+        <div class="elem1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+<body>
+    
+</body>
+</html>
