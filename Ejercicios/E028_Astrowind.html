@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <title>Astrowind</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        header{
+            background-color: rgba(255, 255, 255, 0.644);
+            padding: 1rem 0;
+            position: sticky;
+            top:0
+         
+            
+        }
+        nav{
+            font-size: 1.3rem;
+           
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding-right:0.8rem;
+        }
+        nav a:hover¨{
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        main{
+            padding-top: 3.5rem;
+        }
+        .lila {
+            color: blueviolet;
+        }
+        h1{
+            grid-column: 2/span 10;
+            font-size: 4.1rem;
+            letter-spacing: -4.5px;
+
+            
+        }
+        .about{
+            text-transform: uppercase;
+            text-align: center;
+            color: blue;
+            font-weight: bold;
+
+        }
+        .subtitulo{
+            grid-column: 4/span 6;
+            padding: 0 3rem;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        
+
+        }
+        .medio{
+            grid-column: 3/span 8;
+
+        }
+        .foto{
+            width: 100%;
+        }
+        .derecha{
+            text-align: right;
+        }
+
+        .columnas{
+            display:grid;
+            grid-template-columns: 
+                        minmax(20px,1fr)
+                        minmax(0,1200px)
+                        minmax(20px,1fr);
+            grid-template-areas: 
+                ". contenido .";}
+        .contenido{
+            grid-area: contenido;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            gap: 20px;
+        }
+        .col-12{
+            grid-column: span 12;
+        }
+        .col-8{
+            grid-column: span 8;
+        }
+        .col-6{
+            grid-column: span 6;
+        }        
+        .col-4{
+            grid-column: span 4;
+        }
+        .col-3{
+            grid-column: span 3;
+        }
+        .negro {
+            background-color: rgb(0, 2, 31);
+            padding: 0.7rem;
+            font-size: 0.9rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+        .centrado{
+            text-align: center;
+        }
+        span i{
+            color: rgba(0, 0, 0, 0.479);
+        }
+        .numeros{
+            
+             display: flex;
+            justify-content: space-evenly;
+
+        }
+        h2{
+             margin-top: 6rem;
+        }
+        .cifra{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="negro">
+    <div class="mensaje">NEW Astro v6 is now available! »</div>
+    <div class="github"> Github 5.7k</div>
+    </div>
+    <header class="columnas" >
+        
+        <nav class="contenido ">
+            <div class="logo col-3">
+                <a href=""> 🚀AstroWind</a>
+            </div>
+            <div class="menu col-6 centrado">
+                <span><a href="">Homes</a></span>
+                <span><a href="">Pages</a></span>
+                <span><a href="">Landing</a></span>
+                <span><a href="">Blog</a></span>
+                <span><a href="">Widgets</a></span>
+
+            </div>
+            <div class="download col-3 derecha ">
+                <span><i class="fa-regular fa-sun"></i></span>
+                <span><i class="fa-solid fa-rss"></i></span>
+                <span><a href="">Download</a></span>
+            </div>
+        </nav>
+    </header>  
+    <main class="columnas">
+        <div class="contenido centrado">
+            <p class="about medio"> About us</p>
+            <h1 class="">Elevate your online presence with our <span class="lila">Beautiful Website Templates</span></h1>
+            <p class="subtitulo medio">Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus. Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.</p>
+            <img class="foto medio" src="https://picsum.photos/1200/600?mountains" alt="">
+
+        </div>
+        <div class="columnas col-12 centrado">
+        <section class="contenido">
+            <h2 class="col-12 ">Statistics about us</h2>
+            <div class="numeros col-12">
+                <div class="cifra">
+                    <p class="">4</p>
+                    <p>offices</p>
+                </div>
+                <div class="cifra">
+                    <p>248</p>
+                    <p>Employees</p>
+                </div>
+                <div class="cifra">
+                    <p>12</p>
+                    <p>Templates</p>
+                </div>
+                <div class="cifra">
+                    <p>24</p>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </div>
+</section>
+    </main>  
+     
+
+        
+</body>
+</html>
