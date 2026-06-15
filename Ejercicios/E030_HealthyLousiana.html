@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLouisiana</title>
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: "Nunito Sans", sans-serif;
+        }
+
+        .page {
+            display: grid;
+            grid-template-columns:
+                minmax(20px, 1fr) minmax(0, 1200px) minmax(20px, 1fr);
+
+            grid-template-areas:
+                ". contenido .";
+        }
+
+        /* ----------------------------
+           GRID GLOBAL DE 12 COLUMNAS
+        ----------------------------- */
+
+        .contenido {
+            grid-area: contenido;
+
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        /* ----------------------------
+           COLUMNAS
+        ----------------------------- */
+
+        .col-12 {
+            grid-column: span 12;
+        }
+
+        .col-8 {
+            grid-column: span 8;
+        }
+
+        .col-6 {
+            grid-column: span 6;
+        }
+
+        .col-4 {
+            grid-column: span 4;
+        }
+
+        .col-3 {
+            grid-column: span 3;
+        }
+        .contenido h2{
+            color:#004173 ;
+        }
+        .foto {
+            background-image: url(img/home-background.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        header {
+            text-align: right;
+            font-size: 0.8rem;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header li {
+            display: inline-block;
+            padding: 0.5rem 0.5rem;
+
+        }
+
+        .negro {
+            background-color: black;
+
+        }
+
+        .sombra {
+            background-color: rgba(0, 0, 0, 0.685);
+        }
+
+        .info {
+
+            text-align: left;
+            background-color: rgba(248, 244, 244, 0.66);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 18vh;
+            margin-bottom: 5vh;
+        }
+
+        .centrada {
+            width: 960px;
+            margin: 0 auto;
+
+        }
+        .relativo{
+            position: relative;
+        }
+
+        .borde {
+            border-right: 1px solid rgba(0, 0, 0, 0.153);
+
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .cuerpo {
+            background-color: #f5f2ed;
+            border-bottom: 3px solid #004173;
+            
+        }
+        .planes{
+            background-color: #ffffff;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border-top: 2px solid #004173;
+            margin-bottom: 3rem;
+
+        }
+        .planes h2{
+            color:#004173 ;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .planes p{
+            line-height: 2vh;
+        }
+        .pie li{
+            display: inline-block;
+            padding: 1.5rem 0.5rem;
+            font-size: 0.7rem;
+
+        }
+        .pie a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.7rem;
+        }
+        .pie p{
+            font-size: 0.7rem;
+            padding-left: 1rem;
+    
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="logo">
+
+    </div>
+    <header class="foto">
+        <div class="negro">
+            <div class="centrada">
+                <ul>
+                    <li><a href="">CAMBIAR EL TAMAÑO DEL TEXTO</a></li>
+                    <li><a href="">Language English▾</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sombra">
+            <div class="centrada">
+                <nav>
+                    <ul>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Contacting your health or dental plan</a></li>
+                        <li><a href="">Sample enrollment mate</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="page">
+            <div class="info contenido">
+
+
+                <p class="col-3 borde">Healthy Louisiana is here to help you choose the best health plans, dental plans,
+                    doctors, and dental providers for you and your family.</p>
+                <div class="col-3 borde">
+                    <h2>Learn</h2>
+                    <p>Learn about Healthy Louisiana</p>
+                </div>
+                <div class="col-3 borde">
+                    <h2>Choose</h2>
+                    <p>Find health plans, dental plans, and providers</p>
+                </div>
+                <div class="col-3">
+                    <h2>Enroll</h2>
+                    <p>Become a member</p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+    <main class="cuerpo">
+        <div class="page">
+            <div class="contenido abajo">
+                <div class="planes col-3">
+                    <h2>Changes to Medicaid Health Plans in 2026</h2>
+                    <p>Louisiana Medicaid will not offer UnitedHealthcare beginning April 1, 2026. <a href="">Learn more
+                            about this update.</a></p>
+                </div>
+                <div class="planes col-3">
+                    <h2>Questions about your Louisiana Medicaid eligibility?</h2>
+                    <p>Please call Louisiana Medicaid customer service at 1-888-342-6207, Monday – Friday, 8 a.m. to
+                        4:30 p.m. You can also take action on your Medicaid eligibility any time at <a href="">
+                            MyMedicaid.la.gov.</a></p>
+
+                </div>
+                <div class="planes col-3">
+                    <h2>Get the Free Mobile App</h2>
+                    <p>To get the app, search for Healthy Louisiana on Google Play or the App Store.
+                        Use the app to choose a health plan and provider.
+                       <p> You can also:</p>
+                        <ul>
+                        <li>Use the app in Spanish</li>
+                        <li>Find providers based on your current location</li>
+                        <li>Get directions to providers</li>
+                        <li>And more!</li>
+                    </ul>
+                       <p> Learn more about the free mobile app on the FAQs page.</p>
+
+                </div>
+                <div class="planes col-3">
+                    <h2>New Healthy Louisiana Members</h2>
+                    <p>If you want to change your health plan or dental plan so your new plan starts July 1, 2026, you
+                        must make the change before 6 p.m. on June 29, 2026.
+
+                        If you make the change after June 29 your new health plan or dental plan will start on August 1,
+                        2026.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="pie centrado">
+        <ul>
+            <li><a href="">Contact us</a></li>| 
+            <li><a href="">Privacy statement</a></li>| 
+            <li><a href="">Sitemap</a></li>| 
+            <li><a href=""></a>Text message terms and conditions</li>
+        </ul>
+        <p>© 2026 Created by Maximus®</p>
+    </div>
+    <main>
+
+    </main>
+
+</body>
+
+</html>
